@@ -1,5 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li a {
+  padding: 15px;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+}
+
+.heroPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroPhoto img {
+  margin: 50px 0;
+}
+
+.about {
+  width: 70%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 30px;
+    margin: 30px;
+  }
+
+  li a {
+    padding: 5px;
+  }
+
+  .heroPhoto img {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .about {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+  }
 }
